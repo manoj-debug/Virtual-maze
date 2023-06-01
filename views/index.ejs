@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="form-manager">
+    <div class="form-div">
+        
+        <center>
+        <form onsubmit="return validateForm()"  action="/room" method="post" class="form-content">
+            
+            <h1 style="letter-spacing: 10px;">Virtual Maze-app</h1>
+            <label for="" class="label-color">Display name</label><br>
+            <input type="text" id="username" name="name" placeholder="Enter the name"><br>
+            <label for="" class="label-color">Room-name</label><br>
+            <input type="text" name="roomname" id="roomname" placeholder="Enter the roomname"><br>
+            <label for="" class="label-color">Enter password</label><br>
+            <input type="password" name="password"  placeholder="enter the password"><br><br>
+            <button > submit</button>
+            <br>
+            
+            <span id="error" class="error-message">Input fields  empty</span>
+        </form>
+        
+    </center>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
